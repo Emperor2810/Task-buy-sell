@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Lato", sans-serif;
+}
+
+@media only screen and (max-width: 667px) {
+
+    .nav{
+        background: transparent;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .nav ul{
+        margin-top: 10px;
+        list-style: none;
+        display: flex;
+        font-size: 22px;
+    }
+    .nav ul li{
+        margin-left: 10px;
+    }
+    .nav ul li i{
+        color: #000;
+     
+    }
+    .logo img {
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        background-color: #ffffff;
+    }
+    
+    #stock-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .stock-info {
+        display: flex;
+        align-items: center; 
+        width: 350px;
+        padding: 3px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        margin:5px;
+    }
+    
+    .stock-info .stock {
+        flex: 1; 
+        margin-bottom: 0; 
+    }
+    .stock p {
+        margin-left: -25px;
+        font-size: 12px;
+        font-family: "Lato", sans-serif;
+        color: darkslategrey;
+    }
+    .stock .stock-name{
+        margin-left: -12px;
+    } 
+    .stock h2 {
+        font-size: 18px;
+    }
+    
+    .stock h3 {
+        font-size: 11px;
+        color: #ff0000;
+    }
+    .stock .Nifty{
+        color: rgb(0, 194, 0);
+    }
+    .stock img {
+        margin-top: -10px;
+        max-width: 50px;
+        height: auto;
+    }
+    
+    #assistance-container {
+        margin-left: 25px;
+        margin-right: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 5px;
+        background-image: url('assets/coin\ bg.jpeg');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #assistance-container h2 {
+        padding-top: 15px;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    
+    #assistance-container button {
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    #assistance-container button:hover {
+        background-color: #6db4ff;
+    }
+    
+    #investment-container {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+    
+    .heading {
+        margin-bottom: 20px;
+    }
+    
+    .options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .option {
+        flex: 1 0 23%;
+        text-align: center;
+    }
+     .option img {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: #ffffff;
+        border: 2px solid #dddddd;
+    }
+    
+    .option span {
+        display: block;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #000000;
+    }
+    #fund{
+        border-top: 3px solid #dfdfdf;
+        padding: 20px;
+    }
+    #mutual{
+        overflow: hidden;
+        display: flex;
+    }
+    #mutual .card{
+        display: flex;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin:5px;
+        transition: transform 0.5s ease;
+    }
+    .slide-animation {
+        transform: translateX(-100%);
+    }
+    #mutual img{
+        padding: 3px;
+        max-width: 50px;
+        height: 30px;
+    }
+    #mutual .card-info p{
+        padding: 3px;
+        color: #000000;
+        font-size: 12px;
+    }
+    #mutual .card-info .card-data {
+        display: flex;
+        justify-content: space-between;
+    }
+    #mutual .card-info .card-data p{
+        font-size:xx-small;
+        color: #676767;
+    }
+    #mutual .card-info .card-data .data{
+        font-size: small;
+        color: #000000;
+    }
+    #mutual .card-info .card-data .data-percentage{
+        font-size: small;
+        color: rgb(0, 250, 0);
+    }
+    #mutual .card-info .card-data > div {
+        flex: 1;
+        text-align: center; 
+    }
+    
+    #top-stocks {
+        padding: 20px;
+        background-color: #85a3ae72;
+    
+    }
+    #stock-list-container {
+        overflow: hidden;
+        display: flex;
+    }
+    .stock-lists{
+        display: flex;
+    }
+    
+    .heading h3 {
+        color: #000000;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .top-stocks {
+        margin-right: 20px;
+        padding: 10px;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    
+    .top-stocks img {
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+    }
+    
+    .top-stocks p {
+        width: 100px;
+        font-weight:10px;
+        margin-bottom: 10px;
+    }
+    
+    .top-stocks span {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    
+    .top-stocks .rs {
+        color: rgba(69, 228, 69, 0.875);
+        font-size:12px;
+        margin: 0;
+    }
+    
+    #Portfolios {
+        padding: 20px;
+    }
+    #port{
+        overflow: hidden;
+        display: flex;
+    }
+    .portfolios-container{ 
+        padding: 10px;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+    
+    .portfolio {
+        display: flex;
+    }
+    
+    .portfolio img {
+        padding-right: 10px;
+        height: 50px;
+        width: 50px;
+    }
+    .portfolio p{
+        margin-top: 10px;
+        width: 200px;
+        color: #676767;
+        font-size: 12px;
+    }
+    .portfolios-container .portfolio-info{
+        display: flex;
+        justify-content: space-between;
+    }
+    .portfolio-info{
+        padding-top: 10px;
+    }
+    .portfolio-info .port-data p{
+        color: #676767;
+        font-size: 12px;
+    }
+    .portfolio-info .port-data span{
+        color: #000000;
+    }
+    .portfolio-info .port-data .percent{
+        color: #15ff00;
+    }
+    
+    #courses {
+        border-top: 3px solid #dfdfdf;
+        padding: 20px;
+    }
+    
+    .heading h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .course{
+        display: flex;
+        overflow: hidden;
+        overflow-x: auto; 
+    }
+    .courses-container {
+        display: block;
+        align-items: center;
+        margin-top: 10px;
+        width: 200px;
+        margin-left: 20px;
+    }
+    
+    .popular-courses {
+        position: relative;
+        width: 200px; 
+        margin-right: 20px; 
+    }
+    
+    .popular-courses img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .review {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 5px 5px;
+    }
+    
+    .courses-data {
+        justify-content: space-between;
+        flex-grow: 1; 
+        display: flex;
+        align-items: center;
+    }
+    
+    .courses-data h2 {
+        margin: 0;
+        font-size: 16px;
+    }
+    
+    .courses-data p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        color: #666;
+    }
+    
+    .bx {
+        font-size: 24px;
+        color: #666;
+    }
+    
+    
+    .community {
+        border-top: 3px solid #dfdfdf;
+        padding: 20px;
+    }
+    
+    .heading h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .community-container {
+        width: 300px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: 20px;
+        padding-right: 10px;
+    }
+    .comm-container{
+        display: flex;
+        overflow: hidden;
+        overflow-x: auto; 
+    }
+    
+    .comm-img {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 10px;
+    }
+    
+    .comm-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .comm-info h4 {
+        font-size: 18px;
+    }
+    .comm-info .comm-data{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    
+    }
+    .comm-info img {
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 100%;
+    
+    }
+    .comm-data li{
+        font-size: 10px;
+        color: #362cc2;
+    }
+    
+    .comm-info button {
+        margin-top: 10px;
+        padding: 8px 16px;
+        border: none;
+        background-color: #a0cbfa;
+        color: #362cc2;
+        font-size: 15px;
+        border-radius: 3px;
+    }
+    footer {
+        border-top: 3px solid #dfdfdf;
+        background-color: #ffffff;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    footer ul {
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin: 0 12px;
+    }
+    
+    footer ul li i {
+        font-size: 24px;
+        color: #333;
+        cursor: pointer;
+    }
+    
+    footer ul li span {
+        display: block;
+        margin-top: 5px;
+        font-size: 14px;
+        color: #666;
+    }
+    
+    footer ul li i:hover {
+        color: #007bff;
+    }
+}
